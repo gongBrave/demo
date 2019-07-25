@@ -17,8 +17,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class DBController {
     @Autowired
     private JdbcTemplate jdbcTemplate;
-
-    // 加了注释
     @RequestMapping("/getUsers")
     public List<Map<String, Object>> getDbType(){
         String sql = "select * from appuser";
